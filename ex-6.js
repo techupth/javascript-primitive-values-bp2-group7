@@ -2,7 +2,7 @@
 
 let totalParts = 13000;
 
-let concatSentence = "Total: 13000 Machine parts";
+let concatSentence = "Total:" + " " + totalParts +" " + "Machine parts";
 console.log(concatSentence)
 
 let literalSentence = `Total: ${totalParts} Machine parts`;
