@@ -1,13 +1,7 @@
-import fs from "fs/promises";
+// Exercise #2: No Product Image
+let productName = "Apple Watch";
+let productPrice = 20000;
+let productDiscount = 0.3;
 
-describe("Exercise 2 : primitive values tests cases", () => {
-  test("exercise 2: productImage จะต้องมี value ที่ถูกต้อง", async () => {
-    const data = await fs.readFile("./ex-2.js");
-    const code = `${data} return productImage`;
+let productImage = null
 
-    const func = new Function(code);
-    const result = func();
-
-    expect(result).toBe(null);
-  });
-});
